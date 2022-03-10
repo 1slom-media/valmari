@@ -1,0 +1,193 @@
+.works{
+    background-color: #ECF9EB;
+    box-shadow: 0px 10px 10px rgba(240, 240, 240, 0.25);
+    padding-bottom: 76px;
+    margin-bottom: 175px;
+    
+    &__heading{
+        padding-top: 70px;
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 40px;
+        text-align: center;
+        color: #55a630;       
+    }
+    
+    &__list{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        background-color: #ffffff;
+        box-shadow: -1px 1px 2px rgba(67, 70, 74, 0.0001), -2px 2px 5px rgba(67, 86, 100, 0.123689);
+        border-radius: 4px; 
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0 auto;
+        margin-top: 70px; 
+    }
+    
+    &__item{
+        
+        &-heading{
+            font-weight: 700;
+            font-size: 45px;
+            line-height: 45px;          
+            text-align: center;
+            margin: 0;
+            margin-top: 54px;
+            margin-bottom: 18px;        
+            color: #55A630;        
+        }
+    }
+    
+    &__text{
+        max-width: 174px;
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 28px;
+        text-align: center; 
+        margin-top: 0;
+        margin-bottom: 54px;  
+        color: #424242;        
+    }
+    
+}
+
+@media only screen and (max-width:1000px){
+    .works{
+        margin-bottom: 140px;
+        padding-bottom: 65px;
+        
+        &__heading{
+            padding-top: 46px;
+            font-size: 30px;
+            line-height: 40px;        
+        }
+        
+        &__list{
+            margin-top: 50px;
+        }
+        
+        &__item{
+            
+            &-heading{
+                font-size: 40px;
+                line-height: 45px;
+                margin-top: 43px;
+                margin-bottom: 15px;        
+            }
+        }
+        
+        &__text{
+            font-size: 20px;
+            line-height: 21px;
+            margin-bottom: 40px;
+            max-width: 159px;        
+        }
+        
+        
+    }
+}
+
+@media only screen and (max-width:768px){
+    .works{
+        margin-bottom: 100px;
+        padding-bottom: 56px;
+        
+        &__heading{
+            padding-top: 50px;
+            font-size: 25px;
+            line-height: 40px;        
+        }
+        
+        &__item{
+            
+            &-heading{
+                font-size: 25px;
+                line-height: 45px;
+                margin-top: 9px;
+                margin-bottom: 7px;        
+            }
+        }
+        
+        &__text{
+            font-size: 13px;
+            line-height: 15px;
+            margin-bottom: 20px;
+            max-width: 120px;        
+        }
+        
+        
+    }
+}
+
+@media only screen and (max-width:480px){
+    .works{
+        margin-bottom: 80px;
+        padding-bottom: 44px;
+        
+        &__heading{
+            padding-top: 35px;
+            font-size: 20px;
+            line-height: 40px;        
+        }
+        
+        &__list{
+            max-width: 360px;
+            flex-wrap: wrap;
+            
+        }
+        
+        &__item{
+            width: 125px;
+            margin: 0 auto;
+            
+            &-heading{
+                font-size: 31px;
+                line-height: 45px;
+                margin-top: 32px;        
+            }
+        }
+        
+        &__text{
+            font-size: 15px;
+            line-height: 19px;
+            margin-bottom: 30px;
+            max-width: 115px;        
+        }  
+        
+    }
+}
+
+@media only screen and (max-width:320px){
+    .works{
+        padding-bottom: 24px;
+        
+        &__list{
+            max-width: 300px;
+            flex-direction: column;
+            
+        }
+        
+        &__item{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 245px;
+            
+            &-heading{
+                font-size: 30px;
+                margin-top: 0px;      
+            }
+        }
+        
+        &__text{
+            line-height: 17px;
+            margin-bottom: 0px;
+            max-width: 120px; 
+            text-align: left;       
+        }  
+        
+    }
+}

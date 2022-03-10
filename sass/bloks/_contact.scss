@@ -1,0 +1,264 @@
+.contact{
+    margin-bottom: 166px;
+
+    &__heading{
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 28px;   
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 75px;    
+        color: #424242;               
+    }
+
+    &__list{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    &__item{
+        max-width:381px;
+        background-color: #FFFFFF;
+        padding-left: 30px;
+        box-shadow: 0px 10px 10px #F0F0F0;
+        height: 312px; 
+        
+        &-first{
+            @include bg ("../images/contact-01.png",auto,right 26px bottom 22px);
+
+        }
+        
+        &-second{
+            background-color: #B7ECB1;
+            @include bg ("../images/contact-02.png",auto,right 26px top 22px);                
+        }
+
+        &-third{
+            @include bg ("../images/contact-03.png",auto,right 18px bottom 28px);
+        }
+
+        &-heading{
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 26px;
+            margin-top: 40px;
+            margin-bottom: 32px; 
+            color: #424242; 
+            
+        }
+        
+        .contact__item-heading-third{
+            margin-top: 28px;
+            margin-bottom: 14px;
+        }
+    }
+
+    &__text{
+        max-width: 327px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;  
+        color: #1C1E23;
+        margin: 0;      
+        opacity: 0.8;    
+    }
+}
+
+@media only screen and (max-width:1000px){
+    .contact{
+        margin-bottom: 140px;
+
+        &__heading{
+            margin-bottom: 50px;
+            font-size: 30px;
+        }
+
+        &__item{
+            max-width: 300px;
+            height: 251px;
+            padding-left: 24px;
+
+            &-first{
+                @include bg ("../images/contact-01-1000.png",auto,right 20px bottom 11px);
+    
+            }
+            
+            &-second{
+                background-color: #B7ECB1;
+                @include bg ("../images/contact-02-1000.png",auto,right 20px top 11px);                
+            }
+    
+            &-third{
+                @include bg ("../images/contact-03-1000.png",auto,right 20px bottom 11px);
+            }
+
+            &-heading{
+                font-size: 20px;
+                margin-top: 45px;
+                margin-bottom: 13px;
+            }
+
+            .contact__item-heading-third{
+                margin-top: 27px;
+                margin-bottom: 13px;
+            }
+
+
+        }
+
+        &__text{
+            max-width: 360px;
+            font-size: 15px;
+            line-height: 17px;    
+        }
+
+
+
+    }
+}
+
+@media only screen and (max-width:768px){
+    .contact{
+        margin-bottom: 100px;
+
+        &__heading{
+            font-size: 25px;
+        }
+
+        &__list{
+            flex-direction: column;
+        }
+
+        &__item{
+            max-width: 642px;
+            height: 142px;
+            padding-left: 221px;
+            margin: 0 auto;
+
+            &-first{
+                @include bg ("../images/contact-01-1000.png",auto,center left 4px);
+    
+            }
+            
+            &-second{
+                background-color: #B7ECB1;
+                @include bg ("../images/contact-02-1000.png",auto,center left 4px);                
+            }
+    
+            &-third{
+                @include bg ("../images/contact-03-1000.png",auto,center left 4px);
+            }
+
+            &-heading{
+                font-size: 16px;
+                margin-top: 13px;
+                margin-bottom: 13px;
+            }
+
+            .contact__item-heading-third{
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+        }
+
+        &__text{
+            max-width: 411px;   
+        }
+    }
+}
+
+@media only screen and (max-width:480px){
+    .contact{
+        margin-bottom: 80px;
+
+        &__heading{
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+
+        &__item{
+            max-width: 355px;
+            height: 220px;
+            padding-left: 106px;
+            margin: 0 auto;
+
+            &-first{
+                @include bg ("../images/contact-480-01.png",auto,center left 15px);
+    
+            }
+            
+            &-second{
+                background-color: #B7ECB1;
+                @include bg ("../images/contact-480-02.png",auto,center left 15px);                
+            }
+    
+            &-third{
+                @include bg ("../images/contact-480-03.png",auto,center left 15px);
+            }
+
+            &-heading{
+                font-size: 15px;
+                line-height: 26px;
+                margin-top: 20px;
+                margin-bottom: 18px;
+            }
+
+            .contact__item-heading-third{
+                margin-top: 18px;
+                margin-bottom: 20px;
+            }
+        }
+
+        &__text{
+            max-width: 232px;
+            line-height: 19px;   
+        }
+    }
+}
+
+@media only screen and (max-width:320px){
+    .contact{
+
+        &__item{
+            max-width: 300px;
+            height: 235px;
+            padding-left: 20px;
+            margin: 0 auto;
+
+            &-first{
+                @include bg ("../images/contact-320-01.png",auto,center top 14px);
+    
+            }
+            
+            &-second{
+                background-color: #B7ECB1;
+                @include bg ("../images/contact-320-02.png",auto,center top 14px);                
+            }
+    
+            &-third{
+                @include bg ("../images/contact-320-03.png",auto,center top 14px );
+            }
+
+            &-heading{
+                text-align: center;
+                font-size: 15px;
+                line-height: 16px;
+                margin-top: 35px;
+                margin-bottom: 17px;
+            }
+
+            .contact__item-heading-third{
+                margin-top: 40px;
+                margin-bottom: 20px;
+            }
+        }
+
+        &__text{
+            max-width: 270px;   
+        }
+    }
+}
