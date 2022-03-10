@@ -129,12 +129,12 @@
         &__logo {
             width: 74px;
             height: 74px;
+            margin-left: 170px;
         }
         
         &__hamburger {
             order: -1;
-            max-width: 208px;
-            min-width: 108px;
+            width: 60px;
             text-align: left;
         }
         
@@ -169,6 +169,7 @@
         &__hamburger-image {
             width: 49px;
             height: 24px;
+            margin-right: 260px;
         }
 
         &__tel{
@@ -194,6 +195,11 @@
             display: none;
         }
 
+        &__mobile-container{
+            padding: 0 25px;
+            margin-top: 10px;
+        }
+
         &__hamburger {
             width: 50px;
             
@@ -207,6 +213,7 @@
         &__logo{
             width: 45px;
             height: 46px;
+            margin-left: 50px;
         }
 
         &__tel{
@@ -227,6 +234,10 @@
 
 @media only screen and (max-width:320px){
     .header{
+        &__mobile-container{
+            padding: 9px 11px;
+        }
+
         &__desktop{
             display: none;
         }

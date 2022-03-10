@@ -43,9 +43,9 @@
         padding-top: 1px;
 
         &__heading{
-            width: 305px;
+            max-width: 305px;
             margin-right: 25px;
-            margin-left: 60px;
+            margin-left: 40px;
             font-size: 21px;
             line-height: 31px;       
         }
@@ -53,6 +53,7 @@
         &__img{
             width: 311px;
             height: 294px;
+            margin-right: 40px;
         }
     }
 }
@@ -80,6 +81,7 @@
         &__img{
             width: 480px;
             height: 222px;
+            margin-right: 0;
         }
 
 
