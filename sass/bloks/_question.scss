@@ -80,3 +80,214 @@
         color: #FFFFFF;     
     }
 }
+
+@media only screen and (max-width:1000px){
+    .question{
+        margin-bottom: 140px;
+    
+        &__container{
+            position: relative;
+        }
+    
+    
+        &__heading{
+            margin-bottom: 50px;    
+        }
+    
+        &__list{
+            max-height: 1048px;
+            padding-left: 82px;
+            padding-right: 38px;
+        }
+    
+        &__item{
+            margin-bottom: 52px;
+    
+            &:nth-child(4){
+                margin-bottom: 256px;
+            }
+            &:nth-child(8){
+                margin-bottom: 256px;
+            }
+    
+        }
+    
+        &__text{
+            max-width: 598px;   
+        }
+    
+        &__btn{
+            position: absolute;
+            top: 1100px;
+            left: 401px;
+            line-height: 14px; 
+            text-align: center;  
+            padding: 19px 47px;     
+        }
+    } 
+    
+}
+
+@media only screen and (max-width:768px){
+    .question{
+        margin-bottom: 100px;
+    
+    
+        &__heading{
+            font-size: 25px;
+            line-height: 17px; 
+        }
+    
+        &__list{
+            padding-top: 48px;
+            padding-left: 60px;
+            padding-right: 33px; 
+        }
+    
+        &__item{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 60px;
+    
+            &:nth-child(4){
+                margin-bottom: 256px;
+            }
+            &:nth-child(8){
+                margin-bottom: 256px;
+            }
+    
+            &-heading{
+                font-size: 15px;     
+            }
+        }
+
+        &__content{
+            order: 1;
+            text-align: right;
+            align-self: flex-end;
+
+            display: flex;
+            flex-direction: column;
+        }
+    
+        &__time{
+            order: -1;
+            font-size: 15px;
+        }
+    
+        &__text{
+            max-width: 550px;
+            font-size: 15px;
+            line-height: 23px;    
+        }
+    
+        &__btn{
+            position: absolute;
+            top: 1070px;
+            left: 244px;
+            font-size: 18px;
+            line-height: 16px;   
+            padding: 17px 51px;   
+        }
+    } 
+
+}
+
+
+@media only screen and (max-width:480px){
+    .question{
+        margin-bottom: 80px;
+    
+    
+        &__heading{
+            font-size: 20px;
+            line-height: 15px; 
+            margin-bottom: 40px;
+        }
+    
+        &__list{
+            padding-top: 32px;
+            padding-left: 16px;
+            padding-right: 24px; 
+        }
+    
+        &__item{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 50px;
+    
+            &:nth-child(3){
+                margin-bottom: 256px;
+            }
+            &:nth-child(6){
+                margin-bottom: 256px;
+            }
+    
+        }
+
+        &__content{
+            order: 1;
+            text-align: right;
+            align-self: flex-end;
+
+            display: flex;
+            flex-direction: column;
+        }
+    
+        &__time{
+            order: -1;
+        }
+    
+        &__text{
+            max-width: 320px;    
+        }
+    
+        &__btn{
+            position: absolute;
+            top: 1070px;
+            left: 104px;
+            line-height: 14px;   
+            padding: 17px 50px;   
+        }
+    } 
+
+}
+
+@media only screen and (max-width:320px){
+    .question{
+    
+        &__heading{
+            line-height: 28px;   
+        }
+    
+        &__list{
+            padding-top: 28px;
+            padding-left: 26px;
+            padding-right: 20px; 
+        }
+    
+        &__item{
+            margin-bottom: 56px;
+    
+            &:nth-child(3){
+                margin-bottom: 256px;
+            }
+            &:nth-child(6){
+                margin-bottom: 256px;
+            }
+    
+        }
+
+    
+        &__text{
+            max-width: 255px;    
+        }
+    
+        &__btn{
+            left: 50px;
+            line-height: 16px;   
+            padding: 15px 37px;   
+        }
+    } 
+
+}
