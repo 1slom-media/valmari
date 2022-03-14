@@ -1,0 +1,157 @@
+.doctors{
+    margin-bottom: 175px;
+
+    &__heading{
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 28px;    
+        text-align: center;
+        margin: 0;
+        margin-bottom: 75px;
+        color: #424242;        
+    }
+
+    &__list{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    &__item{
+        margin-right: 20px;
+
+        &:last-child{
+            margin-right: 0;
+        }
+
+        &-img{
+            max-width: 285px;
+            height: auto;
+        }
+
+        &-name{
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 26px;
+            margin: 0;
+            margin-top: 20px;
+            margin-bottom: 2px;
+            color: #424242; 
+        }
+    }
+
+    &__text{
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 23px; 
+        color: #1C1E23;
+        margin: 0;   
+        opacity: 0.8;     
+    }
+}
+
+@media only screen and (max-width:1000px){
+    .doctors{
+        margin-bottom: 140px;
+
+        &__heading{
+            font-size: 30px;
+            margin-bottom: 50px;
+        }
+
+        &__list{
+            max-width: 695px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+
+        &__item{
+            margin-bottom: 85px;
+        }
+    }
+}
+
+@media only screen and(max-width:768px){
+    .doctors{
+        margin-bottom: 100px;
+
+        &__heading{
+            font-size: 25px;
+        }
+
+        &__list{
+            max-width: 645px;
+        }
+
+        &__item{
+            margin-bottom: 70px;
+        }
+    }
+}
+
+@media only screen and(max-width:480px){
+    .doctors{
+        margin-bottom: 80px;
+
+        &__heading{
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+
+        &__list{
+            align-items: flex-start;
+            max-width: 360px;
+        }
+
+        &__item{
+            margin-bottom: 40px;
+
+            &-img{
+                max-width: 160px;
+            }
+
+            &-name{
+                font-size: 15px;
+                margin-top: 10px;
+            }
+        }
+
+        &__text{
+            line-height: 19px;
+            max-width: 150px;
+        }
+    }
+}
+
+@media only screen and(max-width:320px){
+    .doctors{
+
+        &__list{
+            max-width: 180px;
+        }
+
+        &__item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+
+            &-img{
+                max-width: 180px;
+            }
+
+            &-name{
+                margin-top: 14px;
+            }
+        }
+
+        &__text{
+            max-width: 134px;
+            font-size: 13px;
+            text-align: center;
+        }
+    }
+}

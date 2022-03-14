@@ -1551,4 +1551,248 @@ body {
     max-width: 270px;
   }
 }
+
+.doctors {
+  margin-bottom: 175px;
+}
+
+.doctors__heading {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 28px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 75px;
+  color: #424242;
+}
+
+.doctors__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.doctors__item {
+  margin-right: 20px;
+}
+
+.doctors__item:last-child {
+  margin-right: 0;
+}
+
+.doctors__item-img {
+  max-width: 285px;
+  height: auto;
+}
+
+.doctors__item-name {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 2px;
+  color: #424242;
+}
+
+.doctors__text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 23px;
+  color: #1C1E23;
+  margin: 0;
+  opacity: 0.8;
+}
+
+@media only screen and (max-width: 1000px) {
+  .doctors {
+    margin-bottom: 140px;
+  }
+  .doctors__heading {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+  .doctors__list {
+    max-width: 695px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 auto;
+  }
+  .doctors__item {
+    margin-bottom: 85px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .doctors {
+    margin-bottom: 100px;
+  }
+  .doctors__heading {
+    font-size: 25px;
+  }
+  .doctors__list {
+    max-width: 645px;
+  }
+  .doctors__item {
+    margin-bottom: 70px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .doctors {
+    margin-bottom: 80px;
+  }
+  .doctors__heading {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  .doctors__list {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    max-width: 360px;
+  }
+  .doctors__item {
+    margin-bottom: 40px;
+  }
+  .doctors__item-img {
+    max-width: 160px;
+  }
+  .doctors__item-name {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  .doctors__text {
+    line-height: 19px;
+    max-width: 150px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .doctors__list {
+    max-width: 180px;
+  }
+  .doctors__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 40px;
+  }
+  .doctors__item-img {
+    max-width: 180px;
+  }
+  .doctors__item-name {
+    margin-top: 14px;
+  }
+  .doctors__text {
+    max-width: 134px;
+    font-size: 13px;
+    text-align: center;
+  }
+}
+
+.question {
+  margin-bottom: 175px;
+}
+
+.question__container {
+  position: relative;
+}
+
+.question__heading {
+  margin-bottom: 75px;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 28px;
+  text-align: center;
+  color: #424242;
+}
+
+.question__list {
+  padding: 0;
+  margin: 0 auto;
+  max-height: 1048px;
+  padding-top: 70px;
+  padding-left: 104px;
+  padding-right: 56px;
+  background-color: #ECF9EB;
+  overflow-y: scroll;
+}
+
+.question__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.question__item:nth-child(4) {
+  margin-bottom: 256px;
+}
+
+.question__item:nth-child(8) {
+  margin-bottom: 256px;
+}
+
+.question__item-heading {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+  color: #424242;
+}
+
+.question__time {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #424242;
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+.question__text {
+  max-width: 746px;
+  font-size: 16px;
+  line-height: 28px;
+  color: #1C1E23;
+  margin: 0;
+  opacity: 0.8;
+}
+
+.question__btn {
+  position: absolute;
+  top: 1100px;
+  left: 458px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  padding: 21px 61px;
+  border: none;
+  background-color: #55A630;
+  color: #FFFFFF;
+}
 /*# sourceMappingURL=main.css.map */
